@@ -1,25 +1,23 @@
-name: Catalog correction or credit
-description: Add a sourced correction, missing preservation credit, or edition detail.
-title: "[Catalog] "
+name: Report an error or missing credit
+description: Tell Wakka about an incorrect detail, missing credit, or broken link.
+title: "[Archive report] "
 body:
   - type: input
     id: record
     attributes:
-      label: Record or exact source title
-      description: Paste a record URL, record ID, or exact Keitai World Launcher entry title.
+      label: Title or record
+      description: Include the catalog URL, record ID, or exact title.
     validations:
       required: true
   - type: textarea
-    id: correction
+    id: problem
     attributes:
-      label: Correction or missing credit
-      description: Explain the change and which source entry or version it concerns.
+      label: What looks incorrect?
+      description: Describe the incorrect detail, missing credit, or broken link. Wakka reviews reports and makes any site updates.
     validations:
       required: true
   - type: textarea
-    id: evidence
+    id: source
     attributes:
-      label: Supporting source
-      description: Link an original reference. Please provide filenames or checksums rather than uploading game files.
-    validations:
-      required: true
+      label: Supporting reference
+      description: Include a source link where possible. Please provide filenames or checksums rather than attaching game files.
