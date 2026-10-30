@@ -1,0 +1,25 @@
+name: Catalog correction or credit
+description: Add a sourced correction, missing preservation credit, or edition detail.
+title: "[Catalog] "
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record or exact source title
+      description: Paste a record URL, record ID, or exact Keitai World Launcher entry title.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction or missing credit
+      description: Explain the change and which source entry or version it concerns.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting source
+      description: Link an original reference. Please provide filenames or checksums rather than uploading game files.
+    validations:
+      required: true
